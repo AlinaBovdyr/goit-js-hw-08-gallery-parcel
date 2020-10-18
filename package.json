@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/parcel-deploy-tutorial/issues"
   },
-  "homepage": "https://AlinaBovdyr.github.io/goit-js-hw-08-gallery-parcel",
+  "homepage": "https://alinabovdyr.github.io/goit-js-hw-08-gallery-parcel/",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
