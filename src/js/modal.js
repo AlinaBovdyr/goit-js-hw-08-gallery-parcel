@@ -1,3 +1,7 @@
+const modal = document.querySelector('.js-lightbox');
+const closeModalBtn = document.querySelector('button[data-action="close-lightbox"]');
+const lightboxImg = document.querySelector('.lightbox__image');
+
 export default function onGalleryContainerClick(event) {
   event.preventDefault();
 
@@ -14,18 +18,20 @@ export default function onGalleryContainerClick(event) {
   closeModal();
 }
 
-export function openModal() {
+function openModal() {
   modal.classList.add("is-open");
   window.addEventListener('keydown', onKeyPress);
 }
 
-export function closeModal() {
+function closeModal() {
   closeModalBtn.addEventListener('click', onModalClose)
 }
 
-export function changeLightboxImgAttributes(image) {
+function changeLightboxImgAttributes(image) {
   const urlOriginal = image.dataset.source;
   const altAttribute = image.alt;
   lightboxImg.setAttribute('src', `${urlOriginal}`);
   lightboxImg.setAttribute('alt', `${altAttribute}`);
 }
+
+
